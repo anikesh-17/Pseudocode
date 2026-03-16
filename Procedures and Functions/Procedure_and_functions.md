@@ -685,3 +685,67 @@ PALINDROME
 ```
 
 ---
+
+# Swap Procedure (By Value)
+
+## Pseudocode
+
+```
+PROCEDURE swap (BYVAL x : INTEGER, y : INTEGER)
+    DECLARE z : INTEGER
+    z = x
+    x = y
+    y = z
+END PROCEDURE
+
+x = 10
+y = 20
+CALL swap(x, y)
+```
+
+---
+
+## C++ Implementation
+
+```cpp
+#include <iostream>
+using namespace std;
+
+void swapValues(int x, int y) {
+    int z;
+
+    z = x;
+    x = y;
+    y = z;
+
+    cout << "Inside Procedure:\\n";
+    cout << "x = " << x << " y = " << y << endl;
+}
+
+int main() {
+
+    int x = 10;
+    int y = 20;
+
+    swapValues(x, y);
+
+    cout << "Outside Procedure:\\n";
+    cout << "x = " << x << " y = " << y << endl;
+
+    return 0;
+}
+```
+
+---
+
+## Output
+
+```
+Inside Procedure:
+x = 20 y = 10
+
+Outside Procedure:
+x = 10 y = 20
+```
+
+---
