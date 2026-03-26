@@ -55,12 +55,12 @@ CALL cube(3)
 #include<iostream>
 using namespace std;
 
-voidcube(int a) {
+void cube(int a) {
 cout<<a*a*a;
 }
 
-intmain() {
-cube(3);
+int main() {
+    cube(3);
 }
 ```
 
@@ -90,12 +90,12 @@ CALL areaTriangle(10, 5)
 #include <iostream>
 using namespace std;
 
-voidareaTriangle(int b,int h) {
+void areaTriangle(int b,int h) {
 cout<< (b*h)/2;
 }
 
 int main() {
-areaTriangle(10,5);
+    areaTriangle(10,5);
 }
 ```
 
@@ -130,14 +130,14 @@ CALL max(10, 20)
 using namespace std;
 
 void maxNum(inta,intb) {
-if(a>b)
-cout<<a;
-else
-cout<<b;
+    if(a>b)
+        cout<<a;
+    else
+        cout<<b;
 }
 
 int main() {
-maxNum(10,20);
+    maxNum(10,20);
 }
 ```
 
@@ -167,12 +167,12 @@ PRINT add(2, 3)
 #include<iostream>
 using namespace std;
 
-int add(inta,intb) {
+int add(int a,int b) {
 return a+b;
 }
 
 int main() {
-cout<<add(2,3);
+    cout<<add(2,3);
 }
 ```
 
@@ -211,18 +211,18 @@ PRINT max(23, 6)
 using namespace std;
 
 int maxNum(int a,int b) {
-int c;
+    int c;
 
-if(a>b)
-	c = a;
-else
-	c =b;
+    if(a>b)
+        c = a;
+    else
+        c =b;
 
-return c;
+    return c;
 }
 
 int main() {
-cout<<maxNum(23,6);
+    cout<<maxNum(23,6);
 }
 ```
 
@@ -254,13 +254,13 @@ CALL simpleInterest(12, 3, 4)
 #include<iostream>
 using namespace std;
 
-voidsimpleInterest(int pa,float roi,float noy) {
-float si = (pa*roi*noy)/100;
-cout<<si;
+void simpleInterest(int pa,float roi,float noy) {
+    float si = (pa*roi*noy)/100;
+    cout<<si;
 }
 
 int main() {
-simpleInterest(12,3,4);
+    simpleInterest(12,3,4);
 }
 ```
 
@@ -290,15 +290,15 @@ PRINT simpleInterest(12,3,4)
 
 ```cpp
 #include <iostream>
-usingnamespacestd;
+using namespace std;
 
 float simpleInterest(int pa,float roi,float noy) {
-floatsi = (pa*roi*noy)/100;
-return si;
+    floatsi = (pa*roi*noy)/100;
+    return si;
 }
 
 int main() {
-cout<<simpleInterest(12,3,4);
+    cout<<simpleInterest(12,3,4);
 }
 ```
 
@@ -326,14 +326,14 @@ PRINT areaCircle(6.6)
 
 ```cpp
 #include<iostream>
-usingnamespacestd;
+using namespace std;
 
 float areaCircle(float rad) {
-return 3.14*rad*rad;
+    return 3.14*rad*rad;
 }
 
 int main() {
-cout<<areaCircle(6.6);
+    cout<<areaCircle(6.6);
 }
 ```
 

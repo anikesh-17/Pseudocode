@@ -336,8 +336,6 @@ PRINT i
 
 END FOR
 
-```cpp
-
 ## C++ Code
 ```cpp
 #include <iostream>
@@ -377,13 +375,13 @@ END FOR
 
 ```cpp
 #include<iostream>
-usingnamespacestd;
+using namespace std;
 
-intmain() {
-for(inti =1;i<=10;i++) {
-if(i==5)
-continue;
-cout<<i<<" ";
+int main() {
+    for(inti =1;i<=10;i++) {
+        if(i==5)
+            continue;
+        cout<<i<<" ";
     }
 }
 ```
@@ -413,13 +411,13 @@ END FOR
 
 ```cpp
 #include<iostream>
-usingnamespacestd;
+using namespace std;
 
-intmain() {
-for(inti =1;i<=10;i++) {
-if(i%2!=0)
-continue;
-cout<<i<<" ";
+int main() {
+    for(int i =1;i<=10;i++) {
+        if(i%2!=0)
+            continue;
+        cout<<i<<" ";
     }
 }
 ```
@@ -449,13 +447,13 @@ END FOR
 
 ```cpp
 #include<iostream>
-usingnamespacestd;
+using namespace std;
 
-intmain() {
-for(inti =1;i<=10;i++) {
-if(i%2==0)
-continue;
-cout<<i<<" ";
+int main() {
+    for(int i =1;i<=10;i++) {
+        if(i%2==0)
+            continue;
+        cout<<i<<" ";
     }
 }
 ```
@@ -493,10 +491,10 @@ PRINT rev
 
 ```cpp
 #include<iostream>
-usingnamespacestd;
+using namespace std;
 
-intmain() {
-intn,x,rev =0;
+int main() {
+int n,x,rev =0;
 cin>>n;
 
 while(n>0) {
@@ -546,10 +544,10 @@ END IF
 
 ```cpp
 #include<iostream>
-usingnamespacestd;
+using namespace std;
 
-intmain() {
-intn,x,rev =0,temp;
+int main() {
+int n,x,rev =0,temp;
 cin>>n;
 
 temp =n;
@@ -601,19 +599,19 @@ PRINT sum
 
 ```cpp
 #include<iostream>
-usingnamespacestd;
+using namespace std;
 
-intmain() {
-intn,x,sum =0;
-cin>>n;
+int main() {
+    int n,x,sum =0;
+    cin>>n;
 
-while(n>0) {
-x =n%10;
-sum+=x;
-n/=10;
+    while(n>0) {
+        x =n%10;
+        sum+=x;
+        n/=10;
     }
 
-cout<<sum;
+    cout<<sum;
 }
 ```
 
@@ -649,18 +647,18 @@ PRINT count
 
 ```cpp
 #include<iostream>
-usingnamespacestd;
+using namespace std;
 
-intmain() {
-intn,count =0;
-cin>>n;
+int main() {
+    int n,count =0;
+    cin>>n;
 
-while(n>0) {
-n/=10;
-count++;
+    while(n>0) {
+        n/=10;
+        count++;
     }
 
-cout<<count;
+    cout<<count;
 }
 ```
 
@@ -701,24 +699,24 @@ END IF
 
 ```cpp
 #include<iostream>
-usingnamespacestd;
+using namespace std;
 
-intmain() {
-intn,x,sum =0,temp;
-cin>>n;
+int main() {
+    int n,x,sum =0,temp;
+    cin>>n;
 
-temp =n;
+    temp =n;
 
-while(n>0) {
-x =n%10;
-sum+=x*x*x;
-n/=10;
+    while(n>0) {
+        x =n%10;
+        sum+=x*x*x;
+        n/=10;
     }
 
-if(sum==temp)
-cout<<"Armstrong";
-else
-cout<<"Not Armstrong";
+    if(sum==temp)
+        cout<<"Armstrong";
+    else
+        cout<<"Not Armstrong";
 }
 ```
 
@@ -765,28 +763,28 @@ END IF
 
 ```cpp
 #include<iostream>
-usingnamespacestd;
+using namespace std;
 
-intmain() {
-intnum,digit,x;
-boolfound =false;
+int main() {
+    int num,digit,x;
+    bool found =false;
 
-cin>>num>>digit;
+    cin>>num>>digit;
 
-while(num>0) {
-x =num%10;
-num/=10;
+    while(num>0) {
+        x =num%10;
+        num/=10;
 
-if(x==digit) {
-found =true;
-break;
-        }
+    if(x==digit) {
+        found =true;
+        break;
     }
+}
 
 if(found)
-cout<<"Digit Found";
+    cout<<"Digit Found";
 else
-cout<<"Digit Not Found";
+    cout<<"Digit Not Found";
 }
 ```
 
@@ -890,23 +888,23 @@ END IF
 #include<iostream>
 usingnamespacestd;
 
-intmain() {
-intn;
-cin>>n;
+int main() {
+    int n;
+    cin>>n;
 
-boolprime =true;
+    bool prime = true;
 
-for(inti =2;i<n;i++) {
-if(n%i==0) {
-prime =false;
-break;
-        }
+    for(int i = 2;i<n;i++) {
+        if(n % i == 0) {
+            prime = false;
+            break;
     }
+}
 
 if(prime)
-cout<<"Prime";
+    cout<<"Prime";
 else
-cout<<"Not Prime";
+    cout<<"Not Prime";
 }
 ```
 
@@ -948,27 +946,27 @@ END WHILE
 ## C++ Code
 
 ```cpp
-#include<iostream>
-usingnamespacestd;
+#include <iostream>
+using namespace std;
 
-intmain() {
-intn;
+int main() {
+int n;
 cin>>n;
 
-intprev =0,next =1;
+int prev = 0, next = 1;
 
-cout<<prev<<" "<<next<<" ";
+cout << prev <<" "<<next<<" ";
 
 while(true) {
-intsum =prev+next;
+    int sum = prev+next;
 
-if(sum>n)
-break;
+    if(sum>n)
+        break;
 
-cout<<sum<<" ";
+    cout<<sum<<" ";
 
-prev =next;
-next =sum;
+    prev =next;
+    next =sum;
     }
 }
 ```
@@ -1005,17 +1003,17 @@ PRINT value
 
 ```cpp
 #include<iostream>
-usingnamespacestd;
+using namespace std;
 
-intmain() {
-intvalue =1;
-intn =45;
+int main() {
+    int value =1;
+    int n =45;
 
-while(value<=n) {
-value =value<<1;
+    while(value<=n) {
+        value = value << 1;
     }
 
-cout<<value;
+    cout<<value;
 }
 ```
 
@@ -1050,17 +1048,17 @@ END IF
 
 ```cpp
 #include<iostream>
-usingnamespacestd;
+using namespace std;
 
-intmain() {
-intx =259;
+int main() {
+    int x =259;
 
-if(x==0)
-cout<<0;
-elseif(x%9==0)
-cout<<9;
-else
-cout<<x%9;
+    if(x==0)
+        cout<<0;
+    elseif(x%9==0)
+        cout<<9;
+    else
+        cout<<x%9;
 }
 ```
 
@@ -1096,19 +1094,19 @@ PRINT a + b
 
 ```cpp
 #include<iostream>
-usingnamespacestd;
+using namespace std;
 
-intmain() {
-inta =2,b =5,c =10;
+int main() {
+    int a =2,b =5,c =10;
 
-for(c =3;c<=9;c++) {
-a = (a+a)+a;
-a = (a^1)+c;
+    for(c =3;c<=9;c++) {
+        a = (a+a)+a;
+        a = (a^1)+c;
     }
 
-b = (9+7)+a;
+    b = (9+7)+a;
 
-cout<<a+b;
+    cout<<a+b;
 }
 ```
 
@@ -1136,16 +1134,16 @@ WHILE x < 40
 
 ```cpp
 #include<iostream>
-usingnamespacestd;
+using namespace std;
 
-intmain() {
-intx =15,y =12;
+int main() {
+int x =15,y =12;
 
-y =x-1;
+y = x-1;
 
 do {
-cout<<x<<" ";
-x =y+ (x-2);
+    cout<<x<<" ";
+    x =y+ (x-2);
     }while(x<40);
 }
 ```
